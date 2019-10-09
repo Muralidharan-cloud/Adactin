@@ -12,11 +12,11 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		plugin={"pretty",
-				"html:src\\test\\resource\\com\\cucumber\\report",
-				"json:src\\test\\resource\\com\\cucumber\\report.json",
-				"junit:src\\test\\resource\\com\\cucumber\\report.xml"
-		},
+//		plugin={"pretty",
+//				"html:src\\test\\resource\\com\\cucumber\\report",
+//				"json:src\\test\\resource\\com\\cucumber\\report.json",
+//				"junit:src\\test\\resource\\com\\cucumber\\report.xml"
+//		},
 		features="src\\test\\java\\com\\cucumber\\feature",glue="com.cucumber.stepdefinition",
 		tags={"@facebook","~@Ignore"},
 		dryRun=false,strict=true,monochrome=true

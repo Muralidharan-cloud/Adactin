@@ -47,7 +47,7 @@ public class Baseclass {
 	}
 	// get URL
 
-	public static void getUrl(String url) throws Exception {
+	public static void getUrlfrom(String url) throws Exception {
 		try {
 			driver.get(url);
 		} catch (Exception e) {
