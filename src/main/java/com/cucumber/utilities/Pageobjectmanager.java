@@ -2,36 +2,38 @@ package com.cucumber.utilities;
 
 import org.openqa.selenium.WebDriver;
 
+import com.adactinproject.AdactinLogin;
+import com.adactinproject.adactinSearchhotel;
 import com.cucumber.pom.Forgetpasswordpage;
 import com.cucumber.pom.Loginpage;
 
 public class Pageobjectmanager {
 
 	public WebDriver driver;
-	private Forgetpasswordpage fb;
-	private Loginpage lp;
+	private AdactinLogin alp;
+	private adactinSearchhotel ash;
 	
-	
-	
-	
-	
-	public Pageobjectmanager(WebDriver ldriver) {
-        this.driver=ldriver;
+
+	public Pageobjectmanager(WebDriver lodriver) {
+        this.driver=lodriver;
 	}
-	public Forgetpasswordpage getFb() 
+	
+	public adactinSearchhotel gethotelsearch()
 	{
-	  if (fb == null) 
-	  {
-		fb=new Forgetpasswordpage(driver);
-	  }
-	  return fb;
-		
-	}
-	public Loginpage getLp() {
-		if (lp==null) {
-			lp=new Loginpage(driver);
+		if (ash==null)
+		{
+			ash=new adactinSearchhotel(driver);
 		}
-		return lp;
+		return ash;
+	}
+
+	
+	
+	public AdactinLogin getLp() {
+		if (alp==null) {
+			alp=new AdactinLogin(driver);
+		}
+		return alp;
 	}
 	
 	

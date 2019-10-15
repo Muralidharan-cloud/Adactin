@@ -18,7 +18,7 @@ import cucumber.api.junit.Cucumber;
 //				"junit:src\\test\\resource\\com\\cucumber\\report.xml"
 //		},
 		features="src\\test\\java\\com\\cucumber\\feature",glue="com.cucumber.stepdefinition",
-		tags={"@facebook","~@Ignore"},
+		tags={"@adactin","~@Ignore"},
 		dryRun=false,strict=true,monochrome=true
 		
 )
@@ -32,7 +32,7 @@ public class TestRunner {
 	
 	@AfterClass
 	public static void driverquit() {
-       driver.quit();
+     //  driver.quit();
 	}
 
 }
